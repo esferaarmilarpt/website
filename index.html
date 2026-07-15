@@ -293,23 +293,19 @@
 
   <div class="ct-stats">
     <div class="ct-stat">
-      <p class="ct-stat-label">Capital Trading Inicial</p>
-      <p class="ct-stat-value">$10 559</p>
-      <p class="ct-stat-note">Saída HODL · Abr 2024</p>
-    </div>
-    <div class="ct-stat">
       <p class="ct-stat-label">Capital Atual</p>
-      <p class="ct-stat-value pos">$14 723,99</p>
-      <p class="ct-stat-note">após 9 posições</p>
+      <p class="ct-stat-value pos">$13 525,71</p>
+      <p class="ct-stat-note">após 13 posições</p>
     </div>
     <div class="ct-stat">
-      <p class="ct-stat-label">Retorno Trading</p>
-      <p class="ct-stat-value pos">+39,45%</p>
-      <p class="ct-stat-note">+$4 164,99</p>
+      <p class="ct-stat-label">Retorno Total</p>
+      <p class="ct-stat-value pos">+308,63%</p>
+      <p class="ct-stat-note">+$10 215,71 · HODL + Trading</p>
+      <p class="ct-stat-note">desde o ano 2022 · média anual +68,89%</p>
     </div>
     <div class="ct-stat">
       <p class="ct-stat-label">Lucro Total</p>
-      <p class="ct-stat-value pos">+$11 413,99</p>
+      <p class="ct-stat-value pos">+$10 215,71</p>
       <p class="ct-stat-note">HODL + Trading</p>
     </div>
   </div>
@@ -394,9 +390,37 @@
           <td class="pos">+$1 239,00</td><td class="pos">+9,19%</td>
           <td style="color:#4CAF7D;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$14 723,99</td><td style="color:var(--text-muted)">44 dias</td>
         </tr>
+        <tr>
+          <td style="color:var(--text-muted)">10</td>
+          <td><span class="badge badge-long">Long</span></td>
+          <td>BTC</td><td>$8 520,00</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$14 723,99</td><td>15/06/2026</td><td>18/06/2026</td>
+          <td class="neg">−$375,00</td><td class="neg">−2,55%</td>
+          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$14 348,99</td><td style="color:var(--text-muted)">3 dias</td>
+        </tr>
+        <tr>
+          <td style="color:var(--text-muted)">11</td>
+          <td><span class="badge badge-short">Short</span></td>
+          <td>BTC</td><td>$14 000,00</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$14 348,99</td><td>19/06/2026</td><td>22/06/2026</td>
+          <td class="neg">−$252,28</td><td class="neg">−1,76%</td>
+          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$14 096,71</td><td style="color:var(--text-muted)">3 dias</td>
+        </tr>
+        <tr>
+          <td style="color:var(--text-muted)">12</td>
+          <td><span class="badge badge-long">Long</span></td>
+          <td>BTC</td><td>$14 700,00</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$14 096,71</td><td>25/06/2026</td><td>25/06/2026</td>
+          <td class="neg">−$184,00</td><td class="neg">−1,31%</td>
+          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$13 912,71</td><td style="color:var(--text-muted)">mesmo dia</td>
+        </tr>
+        <tr>
+          <td style="color:var(--text-muted)">13</td>
+          <td><span class="badge badge-short">Short</span></td>
+          <td>BTC</td><td>$15 500,00</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$13 912,71</td><td>25/06/2026</td><td>25/06/2026</td>
+          <td class="neg">−$387,00</td><td class="neg">−2,78%</td>
+          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$13 525,71</td><td style="color:var(--text-muted)">mesmo dia</td>
+        </tr>
         <tr class="total-row">
           <td colspan="8" style="text-align:right;color:var(--text-muted);font-size:11px;letter-spacing:0.15em;">TOTAL P&amp;L</td>
-          <td class="pos">+$11 413,99</td>
+          <td class="pos">+$10 215,71</td>
           <td colspan="2"></td>
         </tr>
       </tbody>
@@ -423,8 +447,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
 (function() {
-  const labels = ['Jan 2022','Abr 2024','27/10/2025','28/10/2025','17/04/2026','27/04/2026','22/05/2026','27/05/2026','06/06/2026','14/06/2026'];
-  const data = [3310, 10559, 10335, 10259.84, 13911.84, 14828.84, 14680.82, 14420.99, 13484.99, 14723.99];
+  const labels = ['Jan 2022','Abr 2024','27/10/2025','28/10/2025','17/04/2026','27/04/2026','22/05/2026','27/05/2026','06/06/2026','14/06/2026','18/06/2026','22/06/2026','25/06/2026','25/06/2026'];
+  const data = [3310, 10559, 10335, 10259.84, 13911.84, 14828.84, 14680.82, 14420.99, 13484.99, 14723.99, 14348.99, 14096.71, 13912.71, 13525.71];
   const hodlEndIndex = 1;
   new Chart(document.getElementById('ctEvolutionChart'), {
     type: 'line',
