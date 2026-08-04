@@ -284,7 +284,7 @@
 <!-- COPYTRADE -->
 <div id="copytrade" class="page">
   <div class="ct-chart-wrap">
-    <canvas id="ctEvolutionChart" role="img" aria-label="Gráfico de linha mostrando a evolução do saldo da carteira de Janeiro de 2022 a Junho de 2026. Período HODL em cinzento de Janeiro de 2022 a Abril de 2024, período de Trading em dourado de Abril de 2024 a Junho de 2026, terminando em $14.723,99">Evolução do saldo da carteira ao longo do tempo, de $3.310 (Jan 2022, HODL) até $14.723,99 (Jun 2026, Trading).</canvas>
+    <canvas id="ctEvolutionChart" role="img" aria-label="Gráfico de linha mostrando a evolução do saldo da carteira de Janeiro de 2022 a Julho de 2026. Período HODL em cinzento de Janeiro de 2022 a Abril de 2024, período de Trading em dourado de Abril de 2024 a Julho de 2026, terminando em $13.620,52">Evolução do saldo da carteira ao longo do tempo, de $3.310 (Jan 2022, HODL) até $13.620,52 (Jul 2026, Trading).</canvas>
   </div>
   <div class="ct-chart-legend">
     <span><span class="legend-dot legend-hodl"></span>HODL</span>
@@ -294,18 +294,18 @@
   <div class="ct-stats">
     <div class="ct-stat">
       <p class="ct-stat-label">Capital Atual</p>
-      <p class="ct-stat-value pos">$13 525,71</p>
-      <p class="ct-stat-note">após 13 posições</p>
+      <p class="ct-stat-value pos">$13 620,52</p>
+      <p class="ct-stat-note">após 14 posições</p>
     </div>
     <div class="ct-stat">
       <p class="ct-stat-label">Retorno Total</p>
-      <p class="ct-stat-value pos">+308,63%</p>
-      <p class="ct-stat-note">+$10 215,71 · HODL + Trading</p>
-      <p class="ct-stat-note">desde o ano 2022 · média anual +68,89%</p>
+      <p class="ct-stat-value pos">+311,50%</p>
+      <p class="ct-stat-note">+$10 310,52 · HODL + Trading</p>
+      <p class="ct-stat-note">desde o ano 2022 · média anual +68,14%</p>
     </div>
     <div class="ct-stat">
       <p class="ct-stat-label">Lucro Total</p>
-      <p class="ct-stat-value pos">+$10 215,71</p>
+      <p class="ct-stat-value pos">+$10 310,52</p>
       <p class="ct-stat-note">HODL + Trading</p>
     </div>
   </div>
@@ -314,7 +314,7 @@
     <table class="ct-table">
       <thead>
         <tr>
-          <th>#</th><th>Tipo</th><th>Par</th><th>Capital</th><th>Capital Total</th>
+          <th>#</th><th>Tipo</th><th>Par</th><th>Capital</th><th>Capital Total **</th>
           <th>Abertura</th><th>Fecho</th>
           <th>P&amp;L</th><th>% *</th><th>Saldo Após</th><th>Duração</th>
         </tr>
@@ -418,16 +418,24 @@
           <td class="neg">−$387,00</td><td class="neg">−2,78%</td>
           <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$13 525,71</td><td style="color:var(--text-muted)">mesmo dia</td>
         </tr>
+        <tr>
+          <td style="color:var(--text-muted)">14</td>
+          <td><span class="badge badge-long">Long</span></td>
+          <td>BTC</td><td>$10 850,00</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$13 525,71</td><td>27/06/2026</td><td>28/07/2026</td>
+          <td class="pos">+$94,81</td><td class="pos">+0,70%</td>
+          <td style="color:#4CAF7D;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$13 620,52</td><td style="color:var(--text-muted)">31 dias</td>
+        </tr>
         <tr class="total-row">
           <td colspan="8" style="text-align:right;color:var(--text-muted);font-size:11px;letter-spacing:0.15em;">TOTAL P&amp;L</td>
-          <td class="pos">+$10 215,71</td>
+          <td class="pos">+$10 310,52</td>
           <td colspan="2"></td>
         </tr>
       </tbody>
     </table>
   </div>
   <p style="font-size:12px;font-style:italic;color:var(--text-muted);text-align:right;margin-top:8px;margin-bottom:40px;">
-    * % calculada sobre a banca total (Capital Total), não sobre o valor de entrada da posição
+    * % calculada sobre a banca total (Capital Total), não sobre o valor de entrada da posição<br>
+    ** Capital total da banca no momento em que a trade foi aberta
   </p>
 
   <div class="ct-buttons">
@@ -442,13 +450,13 @@
   </div>
 </div>
 
-<footer>A Esfera Armilar &nbsp;·&nbsp; Trading &amp; Strategy</footer>
+<footer>A Esfera Armilar &nbsp;·&nbsp; Trading &amp; Strategy &nbsp;·&nbsp; <a href="https://www.instagram.com/esferaarmilar.pt/" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: none;">Instagram</a></footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
 (function() {
-  const labels = ['Jan 2022','Abr 2024','27/10/2025','28/10/2025','17/04/2026','27/04/2026','22/05/2026','27/05/2026','06/06/2026','14/06/2026','18/06/2026','22/06/2026','25/06/2026','25/06/2026'];
-  const data = [3310, 10559, 10335, 10259.84, 13911.84, 14828.84, 14680.82, 14420.99, 13484.99, 14723.99, 14348.99, 14096.71, 13912.71, 13525.71];
+  const labels = ['Jan 2022','Abr 2024','27/10/2025','28/10/2025','17/04/2026','27/04/2026','22/05/2026','27/05/2026','06/06/2026','14/06/2026','18/06/2026','22/06/2026','25/06/2026','25/06/2026','28/07/2026'];
+  const data = [3310, 10559, 10335, 10259.84, 13911.84, 14828.84, 14680.82, 14420.99, 13484.99, 14723.99, 14348.99, 14096.71, 13912.71, 13525.71, 13620.52];
   const hodlEndIndex = 1;
   new Chart(document.getElementById('ctEvolutionChart'), {
     type: 'line',
