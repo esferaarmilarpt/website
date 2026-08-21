@@ -187,12 +187,18 @@
 
   /* Table */
   .ct-table-wrap {
-    overflow-x: visible;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
     margin-bottom: 48px;
     border: 1px solid var(--border);
   }
   .ct-table {
-    width: 100%; border-collapse: collapse; font-size: 14px;
+    width: 100%; min-width: 1050px; border-collapse: collapse; font-size: 14px;
+  }
+  .ct-table-hint {
+    display: none;
   }
   .ct-table th {
     font-family: 'Cinzel', serif;
@@ -253,10 +259,34 @@
   }
 
   @media (max-width: 700px) {
-    nav { padding: 0 24px; }
-    #copytrade { padding: 100px 24px 60px; }
+    nav { padding: 0 20px; }
+    .nav-brand { gap: 8px; }
+    .nav-logo { width: 38px; height: 38px; }
+    .nav-name { font-size: 13px; }
+    .nav-links { gap: 20px; }
+    .nav-links a { font-size: 11px; letter-spacing: 0.1em; }
+    #copytrade { padding: 96px 16px 52px; }
+    .ct-chart-wrap { height: 260px; padding: 12px; }
+    .ct-chart-legend { margin-bottom: 28px; }
+    .ct-table-hint {
+      display: block;
+      margin: 0 0 8px;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-style: italic;
+      text-align: right;
+    }
+    .ct-table-wrap { margin-bottom: 32px; }
+    .ct-table th, .ct-table td { padding: 12px 10px; }
     .ct-buttons { flex-direction: column; align-items: center; }
     .ct-btn { width: 100%; max-width: 320px; }
+    footer { padding: 32px 16px; letter-spacing: 0.12em; }
+  }
+
+  @media (max-width: 360px) {
+    nav { padding: 0 14px; }
+    .nav-name { display: none; }
+    .nav-links { gap: 16px; }
   }
 </style>
 </head>
@@ -310,7 +340,8 @@
     </div>
   </div>
 
-  <div class="ct-table-wrap">
+  <p class="ct-table-hint">Deslize horizontalmente para ver todas as colunas.</p>
+  <div class="ct-table-wrap" tabindex="0" role="region" aria-label="Tabela de resultados de Copytrade. Deslize horizontalmente para ver todas as colunas.">
     <table class="ct-table">
       <thead>
         <tr>
@@ -492,7 +523,7 @@
       plugins: { legend: { display: false } },
       scales: {
         y: { ticks: { callback: (v) => '$' + v.toLocaleString() } },
-        x: { ticks: { autoSkip: false, maxRotation: 45, font: { size: 10 } } }
+        x: { ticks: { autoSkip: true, maxTicksLimit: 15, maxRotation: 45, font: { size: 10 } } }
       }
     }
   });
