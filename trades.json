@@ -1,10 +1,10 @@
 {
   "capitalInicial": 3310,
   "trades": [
-    { "n": 0,  "tipo": "hodl",  "par": "BTC",  "capital": 3310,     "capitalTotal": 3310,     "abertura": "2022-01-01", "fecho": "2025-02-01", "aberturaLabel": "Jan 2022", "fechoLabel": "Abr 2024", "duracaoLabel": "~27 meses", "pnl": 7249.00 },
+    { "n": 0,  "tipo": "hodl",  "par": "BTC",  "capital": 3310,     "capitalTotal": 3310,     "abertura": "2022-01-01", "fecho": "2025-02-01", "pnl": 7249.00 },
     { "n": 1,  "tipo": "short", "par": "BTC",  "capital": 10000,    "capitalTotal": 10559.00, "abertura": "2025-10-25", "fecho": "2025-10-27", "pnl": -224.00 },
     { "n": 2,  "tipo": "long",  "par": "BTC",  "capital": 10000,    "capitalTotal": 10335.00, "abertura": "2025-10-27", "fecho": "2025-10-28", "pnl": -75.16 },
-    { "n": 3,  "tipo": "short", "par": "BTC",  "capital": 10000,    "capitalTotal": 10259.84, "abertura": "2025-10-28", "fecho": "2026-04-17", "duracaoLabel": "~172 dias", "pnl": 3652.00 },
+    { "n": 3,  "tipo": "short", "par": "BTC",  "capital": 10000,    "capitalTotal": 10259.84, "abertura": "2025-10-28", "fecho": "2026-04-17", "pnl": 3652.00 },
     { "n": 4,  "tipo": "long",  "par": "BTC",  "capital": 13652,    "capitalTotal": 10259.84, "abertura": "2026-03-09", "fecho": "2026-04-27", "pnl": 917.00 },
     { "n": 5,  "tipo": "long",  "par": "ETH",  "capital": 2800,     "capitalTotal": 14828.84, "abertura": "2026-05-18", "fecho": "2026-05-22", "pnl": -46.70 },
     { "n": 6,  "tipo": "long",  "par": "BTC",  "capital": 5800,     "capitalTotal": 14828.84, "abertura": "2026-05-19", "fecho": "2026-05-22", "pnl": -101.32 },
