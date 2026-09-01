@@ -324,18 +324,18 @@
   <div class="ct-stats">
     <div class="ct-stat">
       <p class="ct-stat-label">Capital Atual</p>
-      <p class="ct-stat-value pos">$13 620,52</p>
-      <p class="ct-stat-note">após 14 posições</p>
+      <p class="ct-stat-value pos" id="stat-capital">&mdash;</p>
+      <p class="ct-stat-note" id="stat-posicoes"></p>
     </div>
     <div class="ct-stat">
       <p class="ct-stat-label">Retorno Total</p>
-      <p class="ct-stat-value pos">+311,50%</p>
-      <p class="ct-stat-note">+$10 310,52 · HODL + Trading</p>
-      <p class="ct-stat-note">desde o ano 2022 · média anual +68,14%</p>
+      <p class="ct-stat-value pos" id="stat-retorno">&mdash;</p>
+      <p class="ct-stat-note" id="stat-retorno-nota"></p>
+      <p class="ct-stat-note" id="stat-media-anual"></p>
     </div>
     <div class="ct-stat">
       <p class="ct-stat-label">Lucro Total</p>
-      <p class="ct-stat-value pos">+$10 310,52</p>
+      <p class="ct-stat-value pos" id="stat-lucro">&mdash;</p>
       <p class="ct-stat-note">HODL + Trading</p>
     </div>
   </div>
@@ -350,118 +350,7 @@
           <th>P&amp;L</th><th>% *</th><th>Saldo Após</th><th>Duração</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td style="color:var(--text-muted)">0</td>
-          <td><span class="badge badge-hodl">HODL</span></td>
-          <td>BTC</td><td>$3 310</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$3 310</td><td>Jan 2022</td><td>Abr 2024</td>
-          <td class="pos">+$7 249,00</td><td class="pos">+219,0%</td>
-          <td style="color:#4CAF7D;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$10 559,00</td><td style="color:var(--text-muted)">~27 meses</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">1</td>
-          <td><span class="badge badge-short">Short</span></td>
-          <td>BTC</td><td>$10 000</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$10 559,00</td><td>25/10/2025</td><td>27/10/2025</td>
-          <td class="neg">−$224,00</td><td class="neg">−2,12%</td>
-          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$10 335,00</td><td style="color:var(--text-muted)">2 dias</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">2</td>
-          <td><span class="badge badge-long">Long</span></td>
-          <td>BTC</td><td>$10 000</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$10 335,00</td><td>27/10/2025</td><td>28/10/2025</td>
-          <td class="neg">−$75,16</td><td class="neg">−0,73%</td>
-          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$10 259,84</td><td style="color:var(--text-muted)">1 dia</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">3</td>
-          <td><span class="badge badge-short">Short</span></td>
-          <td>BTC</td><td>$10 000</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$10 259,84</td><td>28/10/2025</td><td>17/04/2026</td>
-          <td class="pos">+$3 652,00</td><td class="pos">+35,59%</td>
-          <td style="color:#4CAF7D;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$13 911,84</td><td style="color:var(--text-muted)">~172 dias</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">4</td>
-          <td><span class="badge badge-long">Long</span></td>
-          <td>BTC</td><td>$13 652</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$10 259,84</td><td>09/03/2026</td><td>27/04/2026</td>
-          <td class="pos">+$917,00</td><td class="pos">+8,94%</td>
-          <td style="color:#4CAF7D;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$14 828,84</td><td style="color:var(--text-muted)">49 dias</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">5</td>
-          <td><span class="badge badge-long">Long</span></td>
-          <td>ETH</td><td>$2 800</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$14 828,84</td><td>18/05/2026</td><td>22/05/2026</td>
-          <td class="neg">−$46,70</td><td class="neg">−0,31%</td>
-          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$14 782,14</td><td style="color:var(--text-muted)">4 dias</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">6</td>
-          <td><span class="badge badge-long">Long</span></td>
-          <td>BTC</td><td>$5 800</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$14 828,84</td><td>19/05/2026</td><td>22/05/2026</td>
-          <td class="neg">−$101,32</td><td class="neg">−0,68%</td>
-          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$14 680,82</td><td style="color:var(--text-muted)">3 dias</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">7</td>
-          <td><span class="badge badge-long">Long</span></td>
-          <td>PAXG</td><td>$5 800</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$14 828,84</td><td>07/05/2026</td><td>27/05/2026</td>
-          <td class="neg">−$259,83</td><td class="neg">−1,75%</td>
-          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$14 420,99</td><td style="color:var(--text-muted)">20 dias</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">8</td>
-          <td><span class="badge badge-short">Short</span></td>
-          <td>BTC</td><td>$8 400</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$14 420,99</td><td>01/06/2026</td><td>06/06/2026</td>
-          <td class="neg">−$936,00</td><td class="neg">−6,49%</td>
-          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$13 484,99</td><td style="color:var(--text-muted)">5 dias</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">9</td>
-          <td><span class="badge badge-long">Long</span></td>
-          <td>BTC</td><td>$9 475,65</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$13 484,99</td><td>01/05/2026</td><td>14/06/2026</td>
-          <td class="pos">+$1 239,00</td><td class="pos">+9,19%</td>
-          <td style="color:#4CAF7D;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$14 723,99</td><td style="color:var(--text-muted)">44 dias</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">10</td>
-          <td><span class="badge badge-long">Long</span></td>
-          <td>BTC</td><td>$8 520,00</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$14 723,99</td><td>15/06/2026</td><td>18/06/2026</td>
-          <td class="neg">−$375,00</td><td class="neg">−2,55%</td>
-          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$14 348,99</td><td style="color:var(--text-muted)">3 dias</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">11</td>
-          <td><span class="badge badge-short">Short</span></td>
-          <td>BTC</td><td>$14 000,00</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$14 348,99</td><td>19/06/2026</td><td>22/06/2026</td>
-          <td class="neg">−$252,28</td><td class="neg">−1,76%</td>
-          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$14 096,71</td><td style="color:var(--text-muted)">3 dias</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">12</td>
-          <td><span class="badge badge-long">Long</span></td>
-          <td>BTC</td><td>$14 700,00</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$14 096,71</td><td>25/06/2026</td><td>25/06/2026</td>
-          <td class="neg">−$184,00</td><td class="neg">−1,31%</td>
-          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$13 912,71</td><td style="color:var(--text-muted)">mesmo dia</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">13</td>
-          <td><span class="badge badge-short">Short</span></td>
-          <td>BTC</td><td>$15 500,00</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$13 912,71</td><td>25/06/2026</td><td>25/06/2026</td>
-          <td class="neg">−$387,00</td><td class="neg">−2,78%</td>
-          <td style="color:#CF6679;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$13 525,71</td><td style="color:var(--text-muted)">mesmo dia</td>
-        </tr>
-        <tr>
-          <td style="color:var(--text-muted)">14</td>
-          <td><span class="badge badge-long">Long</span></td>
-          <td>BTC</td><td>$10 850,00</td><td style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;">$13 525,71</td><td>27/06/2026</td><td>28/07/2026</td>
-          <td class="pos">+$94,81</td><td class="pos">+0,70%</td>
-          <td style="color:#4CAF7D;font-family:'Cinzel',serif;font-size:13px;font-weight:500;">$13 620,52</td><td style="color:var(--text-muted)">31 dias</td>
-        </tr>
-        <tr class="total-row">
-          <td colspan="8" style="text-align:right;color:var(--text-muted);font-size:11px;letter-spacing:0.15em;">TOTAL P&amp;L</td>
-          <td class="pos">+$10 310,52</td>
-          <td colspan="2"></td>
-        </tr>
-      </tbody>
+      <tbody id="ct-tbody"></tbody>
     </table>
   </div>
   <p style="font-size:12px;font-style:italic;color:var(--text-muted);text-align:right;margin-top:8px;margin-bottom:40px;">
@@ -485,48 +374,133 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
-(function() {
-  const labels = ['Jan 2022','Abr 2024','27/10/2025','28/10/2025','17/04/2026','27/04/2026','22/05/2026','27/05/2026','06/06/2026','14/06/2026','18/06/2026','22/06/2026','25/06/2026','25/06/2026','28/07/2026'];
-  const data = [3310, 10559, 10335, 10259.84, 13911.84, 14828.84, 14680.82, 14420.99, 13484.99, 14723.99, 14348.99, 14096.71, 13912.71, 13525.71, 13620.52];
-  const hodlEndIndex = 1;
-  new Chart(document.getElementById('ctEvolutionChart'), {
-    type: 'line',
-    data: {
-      labels: labels,
-      datasets: [
-        {
-          label: 'HODL',
-          data: data.map((v, i) => i <= hodlEndIndex ? v : null),
-          borderColor: '#9A9A9A',
-          backgroundColor: 'rgba(154,154,154,0.10)',
-          fill: true,
-          tension: 0,
-          pointRadius: 3,
-          pointBackgroundColor: '#9A9A9A',
-          borderDash: [5, 4]
-        },
-        {
-          label: 'Trading',
-          data: data.map((v, i) => i >= hodlEndIndex ? v : null),
-          borderColor: '#B8952A',
-          backgroundColor: 'rgba(184,149,42,0.12)',
-          fill: true,
-          tension: 0.25,
-          pointRadius: 3,
-          pointBackgroundColor: '#B8952A'
+(function () {
+  const MESES = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+
+  const money = (v, sign) => {
+    const s = Math.abs(v).toLocaleString('pt-PT', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: 'always' });
+    const pre = sign ? (v < 0 ? '−' : '+') : (v < 0 ? '−' : '');
+    return pre + '$' + s;
+  };
+  const pct = (v) => (v < 0 ? '−' : '+') + Math.abs(v).toLocaleString('pt-PT', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: 'always' }) + '%';
+  const parseDate = (iso) => { const [y, m, d] = iso.split('-').map(Number); return new Date(Date.UTC(y, m - 1, d)); };
+  const dateLabel = (t, campo) => t[campo + 'Label'] || (() => { const d = parseDate(t[campo]); return String(d.getUTCDate()).padStart(2,'0') + '/' + String(d.getUTCMonth()+1).padStart(2,'0') + '/' + d.getUTCFullYear(); })();
+  const duracao = (t) => {
+    if (t.duracaoLabel) return t.duracaoLabel;
+    const dias = Math.round((parseDate(t.fecho) - parseDate(t.abertura)) / 86400000);
+    if (dias <= 0) return 'mesmo dia';
+    if (dias === 1) return '1 dia';
+    return dias + ' dias';
+  };
+
+  function calcular(db) {
+    let saldo = db.capitalInicial;
+    const linhas = db.trades.map(t => {
+      const capitalTotal = (t.capitalTotal != null) ? t.capitalTotal : saldo;
+      saldo = Math.round((saldo + t.pnl) * 100) / 100;
+      return Object.assign({}, t, { capitalTotal, saldoApos: saldo, percent: (t.pnl / capitalTotal) * 100 });
+    });
+    const capitalAtual = saldo;
+    const lucro = Math.round((capitalAtual - db.capitalInicial) * 100) / 100;
+    const retorno = (lucro / db.capitalInicial) * 100;
+    const inicio = parseDate(db.trades[0].abertura);
+    const fim = parseDate(db.trades[db.trades.length - 1].fecho);
+    const anos = (fim - inicio) / (365.25 * 86400000);
+    return { linhas, capitalAtual, lucro, retorno, anos, anoInicio: inicio.getUTCFullYear(),
+             nPosicoes: db.trades.filter(t => t.tipo !== 'hodl').length };
+  }
+
+  function renderTabela(r) {
+    const tbody = document.getElementById('ct-tbody');
+    const badge = { hodl: 'badge-hodl', long: 'badge-long', short: 'badge-short' };
+    const rotulo = { hodl: 'HODL', long: 'Long', short: 'Short' };
+    let html = '';
+    r.linhas.forEach(t => {
+      const cls = t.pnl < 0 ? 'neg' : 'pos';
+      const cor = t.pnl < 0 ? '#CF6679' : '#4CAF7D';
+      html += '<tr>'
+        + '<td style="color:var(--text-muted)">' + t.n + '</td>'
+        + '<td><span class="badge ' + (badge[t.tipo] || 'badge-long') + '">' + (rotulo[t.tipo] || t.tipo) + '</span></td>'
+        + '<td>' + t.par + '</td>'
+        + '<td>' + money(t.capital, false) + '</td>'
+        + '<td style="color:var(--gold);font-family:\'Cinzel\',serif;font-size:13px;">' + money(t.capitalTotal, false) + '</td>'
+        + '<td>' + dateLabel(t, 'abertura') + '</td>'
+        + '<td>' + dateLabel(t, 'fecho') + '</td>'
+        + '<td class="' + cls + '">' + money(t.pnl, true) + '</td>'
+        + '<td class="' + cls + '">' + pct(t.percent) + '</td>'
+        + '<td style="color:' + cor + ';font-family:\'Cinzel\',serif;font-size:13px;font-weight:500;">' + money(t.saldoApos, false) + '</td>'
+        + '<td style="color:var(--text-muted)">' + duracao(t) + '</td>'
+        + '</tr>';
+    });
+    html += '<tr class="total-row">'
+      + '<td colspan="8" style="text-align:right;color:var(--text-muted);font-size:11px;letter-spacing:0.15em;">TOTAL P&amp;L</td>'
+      + '<td class="' + (r.lucro < 0 ? 'neg' : 'pos') + '">' + money(r.lucro, true) + '</td>'
+      + '<td colspan="2"></td></tr>';
+    tbody.innerHTML = html;
+  }
+
+  function renderStats(r) {
+    const set = (id, txt) => { const el = document.getElementById(id); if (el) el.innerHTML = txt; };
+    const sinal = (el, v) => { const e = document.getElementById(el); if (e) { e.classList.toggle('pos', v >= 0); e.classList.toggle('neg', v < 0); } };
+    set('stat-capital', money(r.capitalAtual, false));
+    sinal('stat-capital', r.lucro);
+    set('stat-posicoes', 'após ' + r.nPosicoes + ' posições');
+    set('stat-retorno', pct(r.retorno));
+    sinal('stat-retorno', r.retorno);
+    set('stat-retorno-nota', money(r.lucro, true) + ' · HODL + Trading');
+    set('stat-media-anual', 'desde o ano ' + r.anoInicio + ' · média anual ' + pct(r.retorno / r.anos));
+    set('stat-lucro', money(r.lucro, true));
+    sinal('stat-lucro', r.lucro);
+  }
+
+  function renderGrafico(db, r) {
+    const canvas = document.getElementById('ctEvolutionChart');
+    if (!canvas || typeof Chart === 'undefined') return;
+    const labels = [dateLabel(db.trades[0], 'abertura')].concat(r.linhas.map(t => dateLabel(t, 'fecho')));
+    const data = [db.capitalInicial].concat(r.linhas.map(t => t.saldoApos));
+    let hodlEndIndex = 0;
+    r.linhas.forEach((t, i) => { if (t.tipo === 'hodl') hodlEndIndex = i + 1; });
+    canvas.setAttribute('aria-label',
+      'Gráfico de linha da evolução do saldo da carteira, de ' + money(db.capitalInicial, false) +
+      ' (' + labels[0] + ') até ' + money(r.capitalAtual, false) + ' (' + labels[labels.length - 1] + ').');
+    new Chart(canvas, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [
+          { label: 'HODL', data: data.map((v, i) => i <= hodlEndIndex ? v : null),
+            borderColor: '#9A9A9A', backgroundColor: 'rgba(154,154,154,0.10)',
+            fill: true, tension: 0, pointRadius: 3, pointBackgroundColor: '#9A9A9A', borderDash: [5, 4] },
+          { label: 'Trading', data: data.map((v, i) => i >= hodlEndIndex ? v : null),
+            borderColor: '#B8952A', backgroundColor: 'rgba(184,149,42,0.12)',
+            fill: true, tension: 0.25, pointRadius: 3, pointBackgroundColor: '#B8952A' }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { ticks: { callback: (v) => '$' + v.toLocaleString() } },
+          x: { ticks: { autoSkip: true, maxTicksLimit: 15, maxRotation: 45, font: { size: 10 } } }
         }
-      ]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: { legend: { display: false } },
-      scales: {
-        y: { ticks: { callback: (v) => '$' + v.toLocaleString() } },
-        x: { ticks: { autoSkip: true, maxTicksLimit: 15, maxRotation: 45, font: { size: 10 } } }
       }
-    }
-  });
+    });
+  }
+
+  fetch('trades.json?v=' + Date.now())
+    .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+    .then(db => {
+      const r = calcular(db);
+      renderTabela(r);
+      renderStats(r);
+      renderGrafico(db, r);
+    })
+    .catch(err => {
+      console.error('Erro ao carregar trades.json:', err);
+      const tbody = document.getElementById('ct-tbody');
+      if (tbody) tbody.innerHTML = '<tr><td colspan="11" style="text-align:center;color:var(--text-muted);padding:24px;">Não foi possível carregar os dados das trades.</td></tr>';
+    });
 })();
 </script>
 <script>
