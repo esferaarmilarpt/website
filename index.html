@@ -779,6 +779,7 @@
       border: cssVar('--border'),
       text: cssVar('--text'),
       muted: cssVar('--text-muted'),
+      pos: '#4CAF7D',  // o mesmo tom usado nos P&L positivos da tabela (.pos)
       neg: '#CF6679'   // o mesmo tom usado nos P&L negativos da tabela (.neg)
     };
     const FONTE_TEXTO = "'Cormorant Garamond', Georgia, serif";
@@ -875,7 +876,7 @@
         html += '<div style="font-family:' + FONTE_TITULO + ';font-size:16px;color:' + cor.gold + '">' + fmtDolar(v) + '</div>';
       } else {
         const r = p.value[1];
-        html += '<div style="font-family:' + FONTE_TITULO + ';font-size:16px;color:' + (r < 0 ? cor.neg : cor.gold) + '">' + fmtPct(r) + '</div>'
+        html += '<div style="font-family:' + FONTE_TITULO + ';font-size:16px;color:' + (r > 0 ? cor.pos : r < 0 ? cor.neg : cor.gold) + '">' + fmtPct(r) + '</div>'
               + '<div style="color:' + cor.muted + '">' + fmtDolar(v) + '</div>';
       }
       if (i === 0) {
@@ -883,7 +884,7 @@
       } else {
         const ant = pontos[i - 1][1];
         const dif = v - ant;
-        html += '<div style="color:' + (dif < 0 ? cor.neg : cor.gold) + '">' + fmtDolarSinal(dif) + ' (' + fmtPct((dif / ant) * 100) + ')'
+        html += '<div style="color:' + (dif > 0 ? cor.pos : dif < 0 ? cor.neg : cor.gold) + '">' + fmtDolarSinal(dif) + ' (' + fmtPct((dif / ant) * 100) + ')'
               + '<span style="color:' + cor.muted + '"> vs. ponto anterior</span></div>';
       }
       return html;
