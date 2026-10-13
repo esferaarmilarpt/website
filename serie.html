@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carteira Pública | A Esfera Armilar</title>
+<meta name="description" content="A carteira do Hugo, em público: três episódios sobre como começou e uma atualização todas as segundas-feiras, com o valor real.">
+<link rel="canonical" href="https://esferaarmilar.pt/serie.html">
+<meta property="og:title" content="Carteira Pública · A Esfera Armilar">
+<meta property="og:description" content="Como a carteira começou e como está, todas as segundas-feiras.">
+<meta property="og:image" content="https://esferaarmilar.pt/img/partilha.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://esferaarmilar.pt/serie.html">
+<link rel="icon" href="image/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+<link rel="apple-touch-icon" href="image/apple-touch-icon.png">
+<link rel="manifest" href="image/site.webmanifest">
+<link rel="stylesheet" href="css/estilos.css">
+<script src="js/site.js" defer></script>
+<script src="js/episodios.js" defer></script>
+<script src="js/serie.js" defer></script>
+</head>
+<body>
+<a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
+
+<!-- CABEÇALHO: igual em todas as páginas -->
+<header class="cabecalho">
+  <a class="marca" href="index.html">
+    <img src="img/logo.webp" alt="" width="178" height="240">
+    <span>A Esfera Armilar</span>
+  </a>
+  <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" class="menu" aria-label="Principal">
+    <a href="index.html">Início</a>
+    <a href="serie.html" aria-current="page">Carteira Pública</a>
+    <a href="copytrade.html">Copytrade</a>
+    <a href="verificacao.html">Verificação</a>
+    <a class="botao botao-cheio menu-insta" href="https://www.instagram.com/esferaarmilar.pt/" target="_blank" rel="noopener">Seguir no Instagram ↗</a>
+  </nav>
+  <a class="botao botao-cheio cabecalho-acao" href="https://www.instagram.com/esferaarmilar.pt/" target="_blank" rel="noopener">Seguir no Instagram</a>
+</header>
+
+<main id="conteudo">
+  <!-- TOPO: o episódio por onde se começa, em grande, como na Netflix -->
+  <section class="topo" aria-labelledby="titulo-serie">
+    <div class="topo-imagem" aria-hidden="true">
+      <img src="img/topo.webp" alt="" width="1000" height="1074" fetchpriority="high">
+    </div>
+    <div class="topo-texto">
+      <p class="etiqueta"><span class="ponto"></span> Série · todas as segundas-feiras</p>
+      <h1 id="titulo-serie">Carteira<br>Pública</h1>
+      <p class="topo-lead">A minha carteira, em público. Três episódios sobre como começou, em 2022, com 25 dólares ao domingo. Depois, todas as segundas-feiras, o valor real, suba ou desça.</p>
+      <ul class="topo-factos">
+        <li><b>3</b> episódios de origem</li>
+        <li><b>1</b> atualização por semana</li>
+        <li>Valor tirado da <b>Bybit</b></li>
+      </ul>
+      <div class="acoes">
+        <button class="botao botao-cheio" type="button" data-abrir="origem-1">▶&nbsp; Começar pela Origem 1</button>
+        <a class="botao botao-linha" href="#fila-origem">Ver os episódios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTROS -->
+  <div class="filtros" role="group" aria-label="Filtrar episódios" id="filtros">
+    <button type="button" class="filtro" data-filtro="todos" aria-pressed="true">Todos</button>
+    <button type="button" class="filtro" data-filtro="origem" aria-pressed="false">Origem</button>
+    <button type="button" class="filtro" data-filtro="semanal" aria-pressed="false">Semana a semana</button>
+  </div>
+
+  <!-- FILAS: preenchidas a partir de js/episodios.js -->
+  <section class="fila" id="fila-origem" data-fase="origem" aria-labelledby="t-origem">
+    <div class="fila-cabeca">
+      <h2 id="t-origem">Origem</h2>
+      <p>Vê por ordem para perceberes como a carteira começou.</p>
+    </div>
+    <ol class="trilho" data-trilho="origem"></ol>
+  </section>
+
+  <section class="fila" id="fila-semanal" data-fase="semanal" aria-labelledby="t-semanal">
+    <div class="fila-cabeca">
+      <h2 id="t-semanal">Semana a semana</h2>
+      <p>Todas as segundas-feiras: o valor da carteira e a variação face à semana anterior.</p>
+    </div>
+    <ol class="trilho" data-trilho="semanal"></ol>
+  </section>
+
+  <!-- AVISO: o mesmo texto dos vídeos -->
+  <p class="aviso">Isto é o relato da minha carteira. Não é aconselhamento financeiro. Resultados passados não garantem resultados futuros.</p>
+</main>
+
+<!-- RODAPÉ -->
+<footer class="rodape">
+  <div>
+    <strong>A Esfera Armilar</strong>
+    <p>Disciplina. Estratégia. Crescimento.</p>
+  </div>
+  <nav aria-label="Rodapé">
+    <a href="https://www.instagram.com/esferaarmilar.pt/" target="_blank" rel="noopener">Instagram @esferaarmilar.pt</a>
+    <a href="https://www.instagram.com/almeidaafbp/" target="_blank" rel="noopener">Pessoal @almeidaafbp</a>
+    <a href="privacidade.html">Política de privacidade</a>
+  </nav>
+</footer>
+
+<!-- JANELA DO EPISÓDIO -->
+<dialog class="janela" id="janela" aria-labelledby="janela-titulo">
+  <button class="fechar" type="button" data-fechar aria-label="Fechar">×</button>
+  <div class="janela-grelha">
+    <div class="leitor" id="leitor"></div>
+    <div class="janela-texto">
+      <p class="etiqueta" id="janela-etiqueta"></p>
+      <h3 id="janela-titulo"></h3>
+      <p id="janela-resumo"></p>
+      <dl class="estado-carteira" id="janela-carteira" hidden></dl>
+      <a class="botao botao-linha" id="janela-link" href="https://www.instagram.com/esferaarmilar.pt/" target="_blank" rel="noopener">Abrir no Instagram ↗</a>
+      <div class="janela-nav">
+        <button class="botao botao-linha" type="button" id="anterior">← Anterior</button>
+        <button class="botao botao-linha" type="button" id="seguinte">Seguinte →</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# A Esfera Armilar
+
+> Diário público de trading do Hugo, desde 2022. A carteira começou com compras de 25 dólares de Bitcoin todos os domingos (2022–2025) e é hoje gerida com trading. Cada trade fechada fica registada no site, com ganhos e perdas, e os resultados podem ser confirmados num vídeo de verificação. Todas as segundas-feiras sai um vídeo curto com o valor da carteira: a série Carteira Pública.
+
+Conteúdo em português de Portugal. É o relato de uma carteira pessoal: não é aconselhamento financeiro, e resultados passados não garantem resultados futuros.
+
+## Páginas
+
+- [Início](https://esferaarmilar.pt/): o que é a Esfera Armilar, a curva da carteira desde 2022 e a história da carteira
+- [Carteira Pública](https://esferaarmilar.pt/serie.html): a série em vídeo; três episódios de origem e uma atualização por semana
+- [Copytrade](https://esferaarmilar.pt/copytrade.html): evolução da carteira, drawdown, retornos mensais e registo de todas as trades
+- [Verificação](https://esferaarmilar.pt/verificacao.html): vídeo que mostra as contas reais e o histórico de operações
+
+## Dados
+
+- [Registo de trades (JSON)](https://esferaarmilar.pt/trades.json): todas as trades, com tipo, par, capital, datas de abertura e fecho e resultado
+
+## Optional
+
+- [Política de privacidade](https://esferaarmilar.pt/privacidade.html)
+- [Instagram @esferaarmilar.pt](https://www.instagram.com/esferaarmilar.pt/)

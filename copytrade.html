@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Copytrade | Resultados da carteira · A Esfera Armilar</title>
+<meta name="description" content="Evolução da carteira, drawdown, retornos mensais e o registo de todas as trades, ganhos e perdas.">
+<link rel="canonical" href="https://esferaarmilar.pt/copytrade.html">
+<meta property="og:title" content="Copytrade | Resultados da carteira · A Esfera Armilar">
+<meta property="og:description" content="Evolução da carteira, drawdown, retornos mensais e o registo de todas as trades, ganhos e perdas.">
+<meta property="og:image" content="https://esferaarmilar.pt/img/partilha.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://esferaarmilar.pt/copytrade.html">
+<link rel="icon" href="image/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+<link rel="apple-touch-icon" href="image/apple-touch-icon.png">
+<link rel="manifest" href="image/site.webmanifest">
+<link rel="stylesheet" href="css/estilos.css">
+<script src="js/site.js" defer></script>
+<script src="js/copytrade.js" defer></script>
+</head>
+<body>
+<a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
+
+<!-- CABEÇALHO: igual em todas as páginas -->
+<header class="cabecalho">
+  <a class="marca" href="index.html">
+    <img src="img/logo.webp" alt="" width="178" height="240">
+    <span>A Esfera Armilar</span>
+  </a>
+  <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" class="menu" aria-label="Principal">
+    <a href="index.html">Início</a>
+    <a href="serie.html">Carteira Pública</a>
+    <a href="copytrade.html" aria-current="page">Copytrade</a>
+    <a href="verificacao.html">Verificação</a>
+    <a class="botao botao-cheio menu-insta" href="https://www.instagram.com/esferaarmilar.pt/" target="_blank" rel="noopener">Seguir no Instagram ↗</a>
+  </nav>
+  <a class="botao botao-cheio cabecalho-acao" href="https://www.instagram.com/esferaarmilar.pt/" target="_blank" rel="noopener">Seguir no Instagram</a>
+</header>
+
+<main id="conteudo">
+  <section class="pagina-cabeca" aria-labelledby="t-ct">
+    <p class="etiqueta" id="atualizado">Atualizado</p>
+    <h1 id="t-ct">Copytrade</h1>
+    <p class="topo-lead">A evolução da carteira desde 2022 e cada trade registada, com ganhos e perdas.</p>
+  </section>
+
+  <!-- GRÁFICO -->
+  <section class="painel" aria-label="Evolução da carteira">
+    <div class="kpis">
+      <div><p class="kpi-rotulo">Valor no fim do período</p><p class="kpi-valor" id="kpi-valor">—</p></div>
+      <div><p class="kpi-rotulo">Retorno no período</p><p class="kpi-valor" id="kpi-retorno">—</p></div>
+      <div><p class="kpi-rotulo">Drawdown máx.</p><p class="kpi-valor" id="kpi-dd">—</p></div>
+      <div><p class="kpi-rotulo">Desde</p><p class="kpi-valor" id="kpi-desde">—</p></div>
+    </div>
+    <div class="controlos">
+      <div class="segmentos" role="group" aria-label="Período do gráfico">
+        <button type="button" data-periodo="1M" aria-pressed="false">1M</button>
+        <button type="button" data-periodo="3M" aria-pressed="false">3M</button>
+        <button type="button" data-periodo="6M" aria-pressed="false">6M</button>
+        <button type="button" data-periodo="YTD" aria-pressed="false">YTD</button>
+        <button type="button" data-periodo="1A" aria-pressed="false">1A</button>
+        <button type="button" data-periodo="Tudo" aria-pressed="true">Tudo</button>
+      </div>
+      <div class="segmentos" role="group" aria-label="Unidade do gráfico">
+        <button type="button" data-modo="$" aria-pressed="true">$</button>
+        <button type="button" data-modo="%" aria-pressed="false">%</button>
+      </div>
+    </div>
+    <div class="grafico-caixa">
+      <div id="grafico" class="grafico"></div>
+      <div id="dica" class="dica" hidden></div>
+    </div>
+    <div class="trades-dia" id="trades-dia" aria-live="polite" hidden></div>
+    <ul class="legenda">
+      <li><span class="leg-linha"></span>Saldo</li>
+      <li><span class="leg-linha leg-dca"></span>Fase DCA (2022–2025)</li>
+      <li><span class="leg-ponto sobe"></span>Dia em que fechou a ganhar</li>
+      <li><span class="leg-ponto desce"></span>Dia em que fechou a perder</li>
+      <li><span class="leg-dd"></span>Abaixo do pico</li>
+    </ul>
+    <p class="nota">Isto é o relato da minha carteira. Não é aconselhamento financeiro. Resultados passados não garantem resultados futuros.</p>
+  </section>
+
+  <!-- ESTATÍSTICAS -->
+  <section class="estatisticas" aria-label="Estatísticas">
+    <div><p class="kpi-rotulo">Capital atual</p><p class="est-valor" id="st-capital">—</p><p class="est-nota" id="st-capital-nota"></p></div>
+    <div><p class="kpi-rotulo">Retorno total</p><p class="est-valor" id="st-retorno">—</p><p class="est-nota" id="st-retorno-nota"></p></div>
+    <div><p class="kpi-rotulo">Lucro total</p><p class="est-valor" id="st-lucro">—</p><p class="est-nota">HODL + Trading</p></div>
+    <div><p class="kpi-rotulo">Taxa de acerto</p><p class="est-valor" id="st-acerto">—</p><p class="est-nota" id="st-acerto-nota"></p></div>
+    <div><p class="kpi-rotulo">Melhor / pior trade</p><p class="est-valor" id="st-extremos">—</p><p class="est-nota" id="st-extremos-nota"></p></div>
+  </section>
+
+  <!-- RETORNOS MENSAIS -->
+  <section class="bloco" aria-labelledby="t-mensais">
+    <h2 id="t-mensais" class="bloco-titulo">Retornos mensais</h2>
+    <p class="bloco-sub">Variação do saldo em cada mês, desde a primeira trade. Cada trade conta no mês em que fechou.</p>
+    <div class="rolar" tabindex="0" role="region" aria-label="Retornos mensais"><table class="mensais" id="mensais"></table></div>
+  </section>
+
+  <!-- REGISTO DE TRADES -->
+  <section class="bloco" id="registo" aria-labelledby="t-registo">
+    <h2 id="t-registo" class="bloco-titulo">Registo de trades</h2>
+    <div class="rolar" tabindex="0" role="region" aria-label="Registo de trades">
+      <table class="trades">
+        <thead><tr><th scope="col">#</th><th scope="col">Tipo</th><th scope="col">Par</th><th scope="col">Capital</th><th scope="col">Capital total **</th><th scope="col">Abertura</th><th scope="col">Fecho</th><th scope="col">P&amp;L</th><th scope="col">% *</th><th scope="col">Saldo após</th><th scope="col">Duração</th></tr></thead>
+        <tbody id="trades-corpo"></tbody>
+        <tfoot id="trades-total"></tfoot>
+      </table>
+    </div>
+    <nav class="paginas" id="paginas" aria-label="Páginas do registo"></nav>
+    <p class="nota">* % calculada sobre a banca total (capital total), não sobre o valor de entrada da posição.<br>** Capital total da banca no momento em que a trade foi aberta.</p>
+  </section>
+
+  <!-- COPIAR -->
+  <section class="copiar" aria-labelledby="t-copiar">
+    <h2 id="t-copiar" class="bloco-titulo">Perfis de copy trading</h2>
+    <p class="copiar-sub">Podes copiar a carteira de forma 100% automática: cada trade que eu abro na Bybit ou na Bitget abre também na tua conta, sem teres de fazer nada.</p>
+    <p class="copiar-risco">Copiar envolve risco de perda. Resultados passados não garantem resultados futuros.</p>
+    <div class="copiar-botoes">
+      <a class="botao botao-cheio" href="https://www.bybit.com/copyTrade/trade-center/detail?leaderMark=PhcvP1bRk57YoicFSrS6Pg==" target="_blank" rel="noopener">Copy Bybit ↗</a>
+      <a class="botao botao-linha" href="https://www.bitget.com/pt/copy-trading/futures-trader/1476491725874003968" target="_blank" rel="noopener">Copy Bitget ↗</a>
+    </div>
+  </section>
+
+  <!-- FECHO: a ação principal -->
+  <section class="fecho" aria-labelledby="t-fecho">
+    <p class="etiqueta"><span class="ponto"></span> Série · todas as segundas-feiras</p>
+    <h2 id="t-fecho">Vê como a carteira começou.</h2>
+    <div class="acoes">
+      <a class="botao botao-cheio" href="serie.html#origem-1">▶&nbsp; Ver a Origem 1</a>
+      <a class="botao botao-linha" href="https://www.instagram.com/esferaarmilar.pt/" target="_blank" rel="noopener">Seguir no Instagram</a>
+    </div>
+  </section>
+</main>
+
+<!-- RODAPÉ -->
+<footer class="rodape">
+  <div>
+    <strong>A Esfera Armilar</strong>
+    <p>Disciplina. Estratégia. Crescimento.</p>
+  </div>
+  <nav aria-label="Rodapé">
+    <a href="https://www.instagram.com/esferaarmilar.pt/" target="_blank" rel="noopener">Instagram @esferaarmilar.pt</a>
+    <a href="https://www.instagram.com/almeidaafbp/" target="_blank" rel="noopener">Pessoal @almeidaafbp</a>
+    <a href="privacidade.html">Política de privacidade</a>
+  </nav>
+</footer>
+</body>
+</html>

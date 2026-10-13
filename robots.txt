@@ -1,0 +1,26 @@
+# Pesquisa normal e pesquisas das IA: permitidas
+User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Treino de modelos de IA: permitido (decisão de 2026-10-13).
+# Para recusar, trocar Allow por Disallow nestas três linhas.
+# Recusar não tira o site das pesquisas.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://esferaarmilar.pt/sitemap.xml
