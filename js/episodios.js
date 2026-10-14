@@ -23,7 +23,8 @@ window.EPISODIOS = [
     id: 'origem-2', fase: 'origem', etiqueta: 'Origem · 2 de 3',
     titulo: 'De 3.310 a 10.500', duracao: '0:33', estreia: '2026-10-14',
     resumo: 'Três anos de compras semanais, sem falhar um domingo. Quanto foi investido e quanto passou a valer.',
-    imagem: 'img/origem-2.webp', estado: 'em-breve', link: ''
+    imagem: 'img/origem-2.webp', estado: 'no-ar',
+    link: 'https://youtube.com/shorts/JsqUB70eFds'
   },
   {
     id: 'origem-3', fase: 'origem', etiqueta: 'Origem · 3 de 3',
