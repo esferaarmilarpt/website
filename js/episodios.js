@@ -44,8 +44,8 @@ window.EPISODIOS = [
     "estreia": "2026-10-16",
     "resumo": "Em 2025 deixei de comprar todos os domingos e passei a fazer trading. Como a carteira é gerida hoje.",
     "imagem": "img/origem-3.webp",
-    "estado": "em-breve",
-    "link": ""
+    "estado": "no-ar",
+    "link": "https://youtube.com/shorts/kO_oqH-9Uzw"
   },
   {
     "id": "atualizacao-1",
