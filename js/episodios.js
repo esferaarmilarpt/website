@@ -55,7 +55,7 @@ window.EPISODIOS = [
     "duracao": "",
     "estreia": "2026-10-19",
     "resumo": "A primeira segunda-feira: o valor da carteira hoje e o que está aberto.",
-    "imagem": "",
+    "imagem": "img/atualizacao-1.webp",
     "estado": "no-ar",
     "link": "https://youtube.com/shorts/Y2ie7Rplys0",
     "valor": 15627,
