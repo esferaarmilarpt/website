@@ -57,7 +57,7 @@ window.EPISODIOS = [
     "resumo": "A primeira segunda-feira: o valor da carteira hoje e o que está aberto.",
     "imagem": "img/atualizacao-1.webp",
     "estado": "no-ar",
-    "link": "https://youtube.com/shorts/Y2ie7Rplys0",
+    "link": "https://youtube.com/shorts/KyDLwdpfziw",
     "valor": 15627,
     "variacao": null
   },
