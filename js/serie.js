@@ -24,7 +24,8 @@
       ? `<img src="${e.imagem}" alt="" width="640" height="688" loading="lazy">`
       : '<span class="cartao-vazio"><img src="img/logo.webp" alt="" width="178" height="240"></span>';
     let meta = e.duracao || '';
-    if (e.valor != null) meta = `${fmtDolar(e.valor)} <span class="${e.variacao >= 0 ? 'sobe' : 'desce'}">${fmtPct(e.variacao)}</span>`;
+    if (e.valor != null) meta = e.variacao == null ? `${fmtDolar(e.valor)} <span>Ponto de partida</span>` /* ponto-de-partida */
+      : `${fmtDolar(e.valor)} <span class="${e.variacao >= 0 ? 'sobe' : 'desce'}">${fmtPct(e.variacao)}</span>`;
     return `<li><button type="button" class="cartao" data-abrir="${e.id}" ${noAr ? '' : 'aria-disabled="true"'}
               aria-label="${e.etiqueta}: ${e.titulo}${noAr ? '' : ' (ainda não saiu)'}">
       <span class="cartao-imagem">${selo}${imagem}</span>
@@ -82,7 +83,7 @@
     const c = $('#janela-carteira');
     c.hidden = e.valor == null;
     if (e.valor != null) c.innerHTML = `<div><dt>Carteira</dt><dd>${fmtDolar(e.valor)}</dd></div>
-      <div><dt>Na semana</dt><dd class="${e.variacao >= 0 ? 'sobe' : 'desce'}">${fmtPct(e.variacao)}</dd></div>`;
+      ${e.variacao == null ? '<div><dt>Na semana</dt><dd>Ponto de partida</dd></div>' : `<div><dt>Na semana</dt><dd class="${e.variacao >= 0 ? 'sobe' : 'desce'}">${fmtPct(e.variacao)}</dd></div>`}`;
 
     const i = disponiveis.indexOf(e);
     $('#anterior').disabled = i <= 0;
