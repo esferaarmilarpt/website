@@ -1,6 +1,6 @@
 /* =========================================================
    EPISÓDIOS DA CARTEIRA PÚBLICA
-   Este ficheiro é escrito pela admin, no computador do Hugo.
+   Este ficheiro é escrito pela admin (ou pelo painel), no computador do Hugo.
    Está em .js (e não .json) para o site abrir também com duplo clique.
 
    Campos:
@@ -70,8 +70,8 @@ window.EPISODIOS = [
     "estreia": "2026-10-26",
     "resumo": "O valor da carteira nesta segunda-feira e como correu a semana.",
     "imagem": "",
-    "estado": "em-breve",
-    "link": "",
+    "estado": "no-ar",
+    "link": "https://www.youtube.com/shorts/KyDLwdpfziw",
     "valor": null,
     "variacao": null
   }
