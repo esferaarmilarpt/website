@@ -66,13 +66,13 @@ window.EPISODIOS = [
     "fase": "semanal",
     "etiqueta": "Atualização 2",
     "titulo": "Semana 2",
-    "duracao": "",
+    "duracao": "1:22",
     "estreia": "2026-10-26",
     "resumo": "O valor da carteira nesta segunda-feira e como correu a semana.",
-    "imagem": "",
+    "imagem": "img/atualizacao-2.webp",
     "estado": "no-ar",
     "link": "https://www.youtube.com/shorts/KyDLwdpfziw",
-    "valor": null,
-    "variacao": null
+    "valor": 15021,
+    "variacao": -3.88
   }
 ];
