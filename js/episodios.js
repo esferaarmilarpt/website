@@ -86,7 +86,7 @@ window.EPISODIOS = [
     "imagem": "img/atualizacao-3.webp",
     "estado": "no-ar",
     "link": "https://youtube.com/shorts/i6HmKBbuvfQ",
-    "valor": null,
-    "variacao": null
+    "valor": 15039,
+    "variacao": 0.12
   }
 ];
