@@ -74,5 +74,19 @@ window.EPISODIOS = [
     "link": "https://www.youtube.com/shorts/KyDLwdpfziw",
     "valor": 15021,
     "variacao": -3.88
+  },
+  {
+    "id": "atualizacao-3",
+    "fase": "semanal",
+    "etiqueta": "Atualização 3",
+    "titulo": "Semana 3",
+    "duracao": "",
+    "estreia": "2026-11-02",
+    "resumo": "",
+    "imagem": "img/atualizacao-3.webp",
+    "estado": "no-ar",
+    "link": "https://youtube.com/shorts/i6HmKBbuvfQ",
+    "valor": null,
+    "variacao": null
   }
 ];
