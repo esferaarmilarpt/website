@@ -71,7 +71,7 @@ window.EPISODIOS = [
     "resumo": "O valor da carteira nesta segunda-feira e como correu a semana.",
     "imagem": "img/atualizacao-2.webp",
     "estado": "no-ar",
-    "link": "https://www.youtube.com/shorts/KyDLwdpfziw",
+    "link": "https://www.youtube.com/shorts/rVoNLIXQ04g",
     "valor": 15021,
     "variacao": -3.88
   },
