@@ -88,5 +88,19 @@ window.EPISODIOS = [
     "link": "https://youtube.com/shorts/i6HmKBbuvfQ",
     "valor": 15039,
     "variacao": 0.12
+  },
+  {
+    "id": "atualizacao-4",
+    "fase": "semanal",
+    "etiqueta": "Atualização 4",
+    "titulo": "Semana 4",
+    "duracao": "",
+    "estreia": "2026-11-09",
+    "resumo": "",
+    "imagem": "img/atualizacao-4.webp",
+    "estado": "no-ar",
+    "link": "https://www.youtube.com/shorts/_pcnPnBt6TQ",
+    "valor": 14587,
+    "variacao": -3.01
   }
 ];
