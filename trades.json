@@ -59,6 +59,7 @@
     { "n": 55, "tipo": "long",  "par": "BTC",     "capital": 6000.00,  "capitalTotal": 14944.06, "abertura": "2026-11-04", "fecho": "2026-11-04", "pnl": -47.34 },
     { "n": 56, "tipo": "long",  "par": "PAXG",    "capital": 3000.00,  "capitalTotal": 14944.06, "abertura": "2026-11-03", "fecho": "2026-11-06", "pnl": 17.36 },
     { "n": 57, "tipo": "long",  "par": "BTC",     "capital": 5550.00,  "capitalTotal": 14896.72, "abertura": "2026-11-05", "fecho": "2026-11-06", "pnl": -170.65 },
-    { "n": 58, "tipo": "long",  "par": "AERO",    "capital": 1200.00,  "capitalTotal": 14914.08, "abertura": "2026-11-05", "fecho": "2026-11-06", "pnl": -95.37 }
+    { "n": 58, "tipo": "long",  "par": "AERO",    "capital": 1200.00,  "capitalTotal": 14914.08, "abertura": "2026-11-05", "fecho": "2026-11-06", "pnl": -95.37 },
+    { "n": 59, "tipo": "long",  "par": "BTC",     "capital": 7300.00,  "capitalTotal": 14648.06, "abertura": "2026-11-06", "fecho": "2026-11-12", "pnl": -382.65 }
   ]
 }
